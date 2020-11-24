@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>E-Vote</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -20,12 +21,12 @@
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item">
-                            <!-- Start: help_button --><a class="nav-link" href="#">Ajuda</a>
-                            <!-- End: help_button -->
+                            <!-- Start: button_nav_bar_logout --><a class="nav-link" id="button_nav_bar_help" href="#">Ajuda</a>
+                            <!-- End: button_nav_bar_logout -->
                         </li>
                         <li class="nav-item">
-                            <!-- Start: exit_button --><a class="btn btn-light Logout" role="button" href="#" style="background: #e32e2e;border-color: rgba(255,255,255,0);border-left-style: none;color: rgb(255,255,255);width: 80px;">Sair<img src="assets/img/exit-to-app-button.svg" width="16" style="margin-left: 6px;margin-right: -7px;filter: brightness(100%) invert(100%);"></a>
-                            <!-- End: exit_button -->
+                            <!-- Start: button_nav_bar_logout --><a class="btn btn-light Logout" role="button" id="button_nav_bar_logout" href="#" style="background: #e32e2e;border-color: rgba(255,255,255,0);border-left-style: none;color: rgb(255,255,255);width: 80px;">Sair<img src="assets/img/exit-to-app-button.svg" width="16" style="margin-left: 6px;margin-right: -7px;filter: brightness(100%) invert(100%);"></a>
+                            <!-- End: button_nav_bar_logout -->
                         </li>
                     </ul>
                 </div>
@@ -45,22 +46,26 @@
         </div>
         <div style="height: 28px;">
             <h4 style="margin-right: 32px;margin-left: 32px;">Você está conectado como : </h4>
-            <div style="height: 28px;">
-                <!-- Start: user_name -->
-                <h4 style="margin-right: 32px;margin-left: 32px;">user_name</h4>
-                <!-- End: user_name -->
+            <div class="container" style="margin-right: 32px;margin-left: 32px;">
+                <div class="row">
+                    <div class="col-auto">
+                        <form>
+                            <div class="form-group"><label id="label_cabin_vote_user_name" for="">user_name</label></div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         <div style="margin-top: 112px;margin-bottom: 107px;">
             <div class="container">
                 <div class="row">
                     <div class="col-auto col-md-6" style="padding: 0px;width: 146px;margin-bottom: 64px;">
-                        <!-- Start: cancel_vote --><button class="btn btn-primary" id="change_vote-1" type="button" style="background: #e32e2e;border-style: none;margin-left: 32px;"><strong>Cancelar</strong><br></button>
-                        <!-- End: cancel_vote -->
+                        <!-- Start: button_cabin_vote_cancel --><button class="btn btn-primary" id="button_cabin_vote_cancel" type="button" style="background: #e32e2e;border-style: none;margin-left: 32px;"><strong>Cancelar</strong><br></button>
+                        <!-- End: button_cabin_vote_cancel -->
                     </div>
                     <div class="col-auto col-md-6" style="text-align: right;padding: 0px;width: 146px;">
-                        <!-- Start: cast_vote --><button class="btn btn-primary" id="next_tracker" type="button" style="background: rgb(123,180,103);margin-left: 0;margin-right: 32px;"><strong>CONFIRMAR</strong></button>
-                        <!-- End: cast_vote -->
+                        <!-- Start: button_cabin_vote_cancel --><button class="btn btn-primary" id="button_cabin_vote_confirm" type="button" style="background: rgb(123,180,103);margin-left: 0;margin-right: 32px;"><strong>CONFIRMAR</strong></button>
+                        <!-- End: button_cabin_vote_cancel -->
                     </div>
                 </div>
             </div>

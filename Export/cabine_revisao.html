@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>E-Vote</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -20,12 +21,12 @@
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item">
-                            <!-- Start: help_button --><a class="nav-link" href="#">Ajuda</a>
-                            <!-- End: help_button -->
+                            <!-- Start: button_nav_bar_help --><a class="nav-link" id="button_nav_bar_help" href="#">Ajuda</a>
+                            <!-- End: button_nav_bar_help -->
                         </li>
                         <li class="nav-item">
-                            <!-- Start: exit_button --><a class="btn btn-light Logout" role="button" href="#" style="background: #e32e2e;border-color: rgba(255,255,255,0);border-left-style: none;color: rgb(255,255,255);width: 80px;">Sair<img src="assets/img/exit-to-app-button.svg" width="16" style="margin-left: 6px;margin-right: -7px;filter: brightness(100%) invert(100%);"></a>
-                            <!-- End: exit_button -->
+                            <!-- Start: button_nav_bar_logout --><a class="btn btn-light Logout" role="button" id="button_nav_bar_logout" href="#" style="background: #e32e2e;border-color: rgba(255,255,255,0);border-left-style: none;color: rgb(255,255,255);width: 80px;">Sair</a>
+                            <!-- End: button_nav_bar_logout -->
                         </li>
                     </ul>
                 </div>
@@ -40,14 +41,38 @@
             <h2 style="margin-left: 32px;margin-right: 32px;margin-top: 32px;"><strong>Revise sua cédula</strong></h2>
             <h4 style="margin-right: 32px;margin-left: 32px;">Revise seu voto antes de depositar na urna</h4>
             <div style="padding-right: 0;padding-left: 0px;margin-top: 32px;margin-right: 32px;margin-left: 32px;">
-                <h2 id="title_election" style="margin: 0;margin-left: 0;margin-right: 0;margin-top: 0;">Título eleição</h2>
-                <h4 id="selected_vote" style="margin-right: 0;margin-left: 0;">Voto selecionado</h4>
+                <div class="row">
+                    <div class="col-auto">
+                        <form>
+                            <div class="form-group">
+                                <!-- Start: label_cabin_vote_revision_election_name --><label id="label_cabin_vote_revision_election_name" for="" style="font-size: 25px;">election_name</label>
+                                <!-- End: label_cabin_vote_revision_election_name -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-auto">
+                        <form>
+                            <div class="form-group">
+                                <!-- Start: label_cabin_vote_revision_select_vote --><label id="label_cabin_vote_revision_select_vote" for="" style="font-size: 25px;">select_vote</label>
+                                <!-- End: label_cabin_vote_revision_select_vote -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div>
                 <div class="container" style="margin-bottom: 64px;margin-top: 64px;">
                     <div class="row">
-                        <div class="col-auto col-md-6" style="padding: 0px;margin-bottom: 0;width: 146px;"><button class="btn btn-primary" id="change_vote" type="button" style="background: #e32e2e;border-style: none;margin-left: 32px;"><strong>Mudar Voto</strong></button></div>
-                        <div class="col-md-6" style="text-align: right;padding: 0px;width: 146px;height: 36px;"><button class="btn btn-primary" id="next_tracker" type="button" style="margin-right: 32px;"><strong>Avançar</strong></button></div>
+                        <div class="col-auto col-md-6" style="padding: 0px;margin-bottom: 0;width: 146px;">
+                            <!-- Start: button_cabin_vote_revision_change_vote --><button class="btn btn-primary" id="button_cabin_vote_revision_change_vote" type="button" style="background: #e32e2e;border-style: none;margin-left: 32px;"><strong>Mudar Voto</strong></button>
+                            <!-- End: button_cabin_vote_revision_change_vote -->
+                        </div>
+                        <div class="col-md-6" style="text-align: right;padding: 0px;width: 146px;height: 36px;">
+                            <!-- Start: button_cabin_vote_revision_next --><button class="btn btn-primary" id="button_cabin_vote_revision_next" type="button" style="margin-right: 32px;"><strong>Avançar</strong></button>
+                            <!-- End: button_cabin_vote_revision_next -->
+                        </div>
                     </div>
                 </div>
             </div>
