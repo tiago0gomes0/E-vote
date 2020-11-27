@@ -5,17 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>E-Vote</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/Table-With-Search-1.css">
+    <link rel="stylesheet" href="/assets/css/Table-With-Search.css">
 </head>
 
 <body>
     <!-- Start: Navigation Clean -->
     <nav class="navbar navbar-light navbar-expand-md navigation-clean">
-        <div class="container"><a class="navbar-brand" href="#" style="background: url(&quot;assets/img/Logo-bar.png&quot;) no-repeat;background-size: contain;text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>
+        <div class="container"><a class="navbar-brand" href="#" style="background: url(&quot;/assets/img/Logo-bar.png&quot;) no-repeat;background-size: contain;text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>
             <button
                 data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
@@ -34,7 +36,7 @@
     </nav>
     <!-- End: Navigation Clean -->
     <!-- Start: Background -->
-    <div style="background: url(&quot;assets/img/Logo-ufac-opacity.png&quot;) no-repeat, rgba(10,23,55,0);height: 360px;background-position: center;margin-top: 138px;">
+    <div style="background: url(&quot;/assets/img/Logo-ufac-opacity.png&quot;) no-repeat, rgba(10,23,55,0);height: 360px;background-position: center;margin-top: 138px;">
         <div>
             <h1 style="font-size: 48px;line-height: 48px;text-align: center;color: #000000;margin-top: 0px;"><strong>Cabine de Votação</strong><br></h1>
             <h4 style="text-align: center;">Seu voto é secreto e criptografado</h4>
@@ -45,22 +47,20 @@
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <form>
-                        <div class="form-group">
-                            <!-- Start: label_cabin_vote_tracker_tracker --><label id="label_cabin_vote_tracker_tracker" for="" style="font-size: 25px;">vote_tracker</label>
-                            <!-- End: label_cabin_vote_tracker_tracker -->
+                        <div id="span_cabin_vote_tracker_tracker" class="form-group" style="font-size: 32px;"><span id="label_cabin_vote_end_tracker">tracker_code</span></div>
+                        <div style="text-align: center;margin-top: 128px;">
+                            <!-- Start: button_cabin_vote_tracker_deposit --><button class="btn btn-primary" id="button_cabin_vote_tracker_deposit" type="button" style="margin-bottom: 64px;">Depositar cédula</button>
+                            <!-- End: button_cabin_vote_tracker_deposit -->
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <div style="text-align: center;margin-top: 128px;">
-            <!-- Start: button_cabin_vote_tracker_deposit --><button class="btn btn-primary" id="button_cabin_vote_tracker_deposit" type="button" style="margin-bottom: 64px;">Depositar cédula</button>
-            <!-- End: button_cabin_vote_tracker_deposit -->
-        </div>
     </div>
     <!-- End: Background -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/Table-With-Search.js"></script>
 </body>
 
 </html>

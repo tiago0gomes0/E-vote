@@ -5,17 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>E-Vote</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
-    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/Table-With-Search-1.css">
+    <link rel="stylesheet" href="/assets/css/Table-With-Search.css">
 </head>
 
 <body>
     <!-- Start: Navigation Clean -->
     <nav class="navbar navbar-light navbar-expand-md navigation-clean">
-        <div class="container"><a class="navbar-brand" href="#" style="background: url(&quot;assets/img/Logo-bar.png&quot;) no-repeat;background-size: contain;text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>
+        <div class="container"><a class="navbar-brand" href="#" style="background: url(&quot;/assets/img/Logo-bar.png&quot;) no-repeat;background-size: contain;text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>
             <button
                 data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
@@ -38,7 +40,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div style="text-align: center;margin-bottom: 0px;padding-top: 55px;"><img style="background: url(&quot;assets/img/Logo-ufac.png&quot;), rgba(255,255,255,0);background-size: auto, auto;height: 360px;width: 323px;/*margin: 0;*/margin-top: 0;margin-left: 0px;/*top: 174px;*/border-style: none;"></div>
+                    <div style="text-align: center;margin-bottom: 0px;padding-top: 55px;"><img src="/assets/img/Logo-ufac.png"></div>
                 </div>
                 <div class="col-md-6">
                     <h1 style="text-align: center;margin-top: 55px;">E-Vote</h1>
@@ -46,8 +48,10 @@
                         Voting conta com um sistema de auditoria aberta ao público (End-to-end voter verifiable – E2E). Trata-se de um software livre, com documentação técnica e de usuário, facilitando assim o processo de auditoria da solução. Na UFAC
                         foi utilizada uma versão traduzida pelo IFSC da versão original do projeto, disponível em https://vote.heliosvoting.org.</p>
                     <div class="text-center">
-                        <!-- Start: button_index_vote --><button class="btn btn-primary btn-lg" id="button_index_vote" type="button" style="background: #2c6ce9;">Votar</button>
-                        <!-- End: button_index_vote -->
+                        <form>
+                            <!-- Start: button_index_vote --><button class="btn btn-primary btn-lg" id="button_index_vote" type="button" style="background: #2c6ce9;">Votar</button>
+                            <!-- End: button_index_vote -->
+                        </form>
                     </div>
                 </div>
             </div>
@@ -80,8 +84,9 @@
         </div>
     </div>
     <!-- End: 1 Row 3 Columns -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/Table-With-Search.js"></script>
 </body>
 
 </html>

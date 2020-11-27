@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>E-Vote</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/Table-With-Search-1.css">
+    <link rel="stylesheet" href="/assets/css/Table-With-Search.css">
+</head>
+
+<body>
+    <!-- Start: Navigation Clean -->
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#" style="background: url(&quot;/assets/img/Logo-bar.png&quot;) no-repeat;background-size: contain;text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>
+            <button
+                data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <!-- Start: button_nav_bar_help --><a class="nav-link" id="button_nav_bar_help" href="#">Ajuda</a>
+                            <!-- End: button_nav_bar_help -->
+                        </li>
+                        <li class="nav-item">
+                            <!-- Start: button_nav_bar_logout --><a class="btn btn-light Logout" role="button" id="button_nav_bar_logout" href="#" style="background: #e32e2e;border-color: rgba(255,255,255,0);border-left-style: none;color: rgb(255,255,255);width: 80px;">Sair</a>
+                            <!-- End: button_nav_bar_logout -->
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+    <!-- End: Navigation Clean -->
+    <!-- Start: Background -->
+    <div style="background: url(&quot;/assets/img/Logo-ufac-opacity.png&quot;) no-repeat, rgba(10,23,55,0);height: 360px;background-position: center;margin-top: 64px;margin-bottom: 0px;">
+        <div>
+            <div style="padding-right: 0;padding-left: 0px;margin-top: 32px;margin-right: 32px;margin-left: 32px;">
+                <div class="row">
+                    <div class="col-auto">
+                        <h2>Rastreamento de cédulas e eleitores</h2>
+                    </div>
+                    <div class="col"><a class="d-lg-flex" id="link_election_add_voters_back" href="#">Voltar</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-auto"><span id="span_election_add_voters_election_name" style="font-size: 32px;">election_name</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-auto">
+                        <p>Sua eleição está privada, apenas pessoas adicionadas aqui podem votar<br>Adicione um arquivo CSV com Login, Endereço de E-mail, Nome Completo.</p>
+                    </div>
+                </div>
+                <div class="row no-gutters"><div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="file_input_election_add_voters_csv">Escolher Arquivo</span>
+  </div>
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="file_input_election_add_voters_csv">
+    <label class="custom-file-label" for="inputGroupFile01"></label>
+  </div>
+</div></div>
+                <div class="border rounded-circle" style="background: #a4a4a4;height: 3px;opacity: 0.33;margin-bottom: 10px;margin-top: 32px;"></div><form>
+    <div class="form-row" >
+        
+            <div class="form-group col-md-2">
+                <fieldset disabled>
+                <button class="btn btn-primary" id="button_election_private" type="button">Eleição Privada
+                </button>
+                    </fieldset> 
+            </div>
+           
+        <div class="form-group col-md-2">
+            <button class="btn btn-primary" id="button_election_public" type="button" >Eleição Pública
+            </button>
+        </div>    
+    </div>
+</form>
+
+                <div class="border rounded-circle" style="background: #a4a4a4;height: 3px;opacity: 0.33;margin-bottom: -80px;margin-top: 0px;"></div>
+            </div>
+            <!-- Start: Table With Search --><div class="col-md-12 search-table-col">
+    <div class="form-group pull-right col-lg-4">
+        <input type="text" class="search form-control" placeholder="Pesquisar eleitor" />
+    </div>
+    <span class="counter pull-right"></span>
+    <div class="table-responsive table-bordered table table-hover table-bordered results">
+        <table class="table table-bordered table-hover">
+            <thead class="bill-header cs">
+                <tr>
+                    <th id="trs-hd" class="col-lg-1">Nome</th>
+                    <th id="trs-hd" class="col-lg-2">Pseudônimo</th>
+                    <th id="trs-hd" class="col-lg-3">E-mail</th>
+                    <th id="trs-hd" class="col-lg-2">Rastreador de Cédula</th>
+                    <th id="trs-hd" class="col-lg-2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="warning no-result">
+                    <td colspan="12"><i class="fa fa-warning"></i>  No Result !!!</td>
+                </tr>
+                <tr>
+                    <td>user_name</td>
+                    <td>V1</td>
+                    <td>user_name@ufac.br</td>
+                    <td>tracker_number</td>
+                    <td><button class="btn btn-success" style="margin-left: 5px;" type="submit"><i class="fa fa-envelope-o" style="font-size: 15px;"></i></button><button class="btn btn-danger" style="margin-left: 5px;" type="submit"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+            <!-- End: Table With Search -->
+        </div>
+    </div>
+    <!-- End: Background -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/Table-With-Search.js"></script>
+</body>
+
+</html>

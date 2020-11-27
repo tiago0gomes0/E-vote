@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>E-Vote</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/Table-With-Search-1.css">
+    <link rel="stylesheet" href="/assets/css/Table-With-Search.css">
+</head>
+
+<body>
+    <!-- Start: Navigation Clean -->
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#" style="background: url(&quot;/assets/img/Logo-bar.png&quot;) no-repeat;background-size: contain;text-align: justify;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</a>
+            <button
+                data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <!-- Start: button_nav_bar_help --><a class="nav-link" id="button_nav_bar_help" href="#">Ajuda</a>
+                            <!-- End: button_nav_bar_help -->
+                        </li>
+                        <li class="nav-item">
+                            <!-- Start: button_nav_bar_logout --><a class="btn btn-light Logout" role="button" id="button_nav_bar_logout" href="#" style="background: #e32e2e;border-color: rgba(255,255,255,0);border-left-style: none;color: rgb(255,255,255);width: 80px;">Sair</a>
+                            <!-- End: button_nav_bar_logout -->
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+    <!-- End: Navigation Clean -->
+    <!-- Start: Background -->
+    <div style="background: url(&quot;/assets/img/Logo-ufac-opacity.png&quot;) center / auto no-repeat, rgba(10,23,55,0);height: 140;margin-top: 138px;">
+        <div>
+            <h1 style="font-size: 48px;line-height: 48px;text-align: center;color: #000000;margin-top: 0px;margin-bottom: 42px;"><strong>Adicionar questão</strong><br></h1>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col"><form>
+    <div class="form-group">
+        <label for="input_add_question_question">Questão:</label>
+        <input type="text" class="form-control" id="input_add_question_question" placeholder="Exemplo: Quem deve ser eleito?" required>
+        <div class="valid-feedback">
+        Por favor, forneça a questão da eleição.
+        </div>
+    </div>
+    <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="select_add_question_max_options">Máximo de alternativas:</label>
+      <input type="number" class="form-control" id="select_add_question_max_options" required>
+      <div class="valid-feedback">
+        Por favor, forneça o número máximo de alternativas.
+      </div>
+        <small
+            id="max_option" class="form-text text-muted">Máximo de alternatias que o eleitor deve selecionar</small>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="input_add_question_min_options">Mínimo de alternativas:</label>
+      <input type="number" class="form-control" id="input_add_question_min_options" required>
+      <div class="valid-feedback">
+        Por favor, forneça o número mínimo de alternativas.
+      </div>
+        <small
+            id="min_option" class="form-text text-muted">Mínimo de alternatias que o eleitor deve selecionar</small>
+    </div>
+  </div>
+    <div class="form-group">
+        <label for="input_add_question_answer_1">Resposta #1:</label>
+        <input type="text" class="form-control" id="input_add_question_answer_1">
+    </div>
+    <div class="form-group">
+        <label for="input_add_question_answer_2">Resposta #2:</label>
+        <input type="text" class="form-control" id="input_add_question_answer_2">
+    </div>
+    <div class="form-group">
+        <label for="input_add_question_answer_3">Resposta #3:</label>
+        <input type="text" class="form-control" id="input_add_question_answer_3">
+    </div>
+    <div class="form-group">
+        <label for="input_add_question_answer_4">Resposta #4:</label>
+        <input type="text" class="form-control" id="input_add_question_answer_4">
+    </div>
+    <div class="form-group">
+        <label for="input_add_question_answer_5">Resposta #5:</label>
+        <input type="text" class="form-control" id="input_add_question_answer_5">
+    </div>
+    <div  class="d-flex justify-content-center" style="margin-top:32px;">
+        <a id="link_input_add_question_add_more_answer" href="#">Adicionar mais 5 questões</a>
+    </div>
+    <div  class="d-flex justify-content-center" style="margin-top:32px; margin-bottom:64px;"> 
+        <button class="btn btn-primary" type="submit">Avançar</button>
+    </div> 
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Background -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/Table-With-Search.js"></script>
+</body>
+
+</html>
