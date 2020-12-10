@@ -38,80 +38,29 @@
     <!-- Start: Background -->
     <div style="background: url(&quot;/assets/img/Logo-ufac-opacity.png&quot;) no-repeat, rgba(10,23,55,0);height: 360px;background-position: center;margin-top: 138px;">
         <div>
-            <h1 style="font-size: 48px;line-height: 48px;text-align: center;color: #000000;margin-top: 0px;margin-bottom: 42px;"><strong>Criar eleição</strong><br></h1>
+            <h1 style="font-size: 48px;line-height: 48px;text-align: center;color: #000000;margin-top: 0px;margin-bottom: 42px;"><strong>Adicionar apurador</strong></h1>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col" style="margin-bottom: 64px;"><form class="needs-validation" novalidate>
-    <div class="form-row">
+   <div class="form-row">
         <div class="form-group col-md-6">
-          <label for="input_create_election_name_abb">Nome abreviado da eleição:</label>
+          <label for="input_create_election_name_apur">Nome completo do apurador:</label>
           <input type="text" class="form-control" id="input_create_election_name_abb" required />
             <div class="invalid-feedback">
-            Por favor, forneça o nome abreviado da eleição.
+            Por favor, forneça o nome completo do apurador.
             </div>
         </div>
         <div class="form-group col-md-6">
-          <label for="input_create_election_name">Nome da eleição:</label>
-          <input type="text" class="form-control" id="input_create_election_name" required />
+          <label for="input_create_election_email_apur">E-mail do apurador:</label>
+          <input type="email" class="form-control" id="input_create_election_name" required />
             <div class="invalid-feedback">
-            Por favor, forneça o nome da eleição.
+            Por favor, forneça o email do apurador.
             </div>
         </div>
     </div>
-    <div class="form-group">
-        <label for="input_create_election_description">Descrição:</label>
-        <input type="text" class="form-control" id="input_create_election_description" required />
-        <div class="invalid-feedback">
-        Por favor, forneça uma descrição da eleição.
-        </div>
-    </div>
-    <div class="form-group">
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="check_create_election_pseu">
-         <label class="form-check-label" for="check_create_election_pseu">
-        Usar pseudônimos de eleitores
-        </label>
-    </div>
-    </div>
-    <div class="form-group">
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="check_create_election_advence_funtion">
-        <label class="form-check-label" for="check_create_election_advence_function">
-        Usar funcionalidade avançada de auditoria        </label>
-    </div>
-    </div>
-    <div class="form-group">
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="check_create_election_ramdom_question">
-        <label class="form-check-label" for="check_create_election_ramdom_question">
-        Tornar ordem das questões aleatória
-        </label>
-    </div>
-    </div>
-    <div class="form-group">
-        <label for="input_create_election_help_email">Endereço de email para ajuda:</label>
-        <input type="email" class="form-control" id="input_create_election_help_email" required />
-        <div class="invalid-feedback">
-        Por favor, forneça um email de ajuda para a eleição.
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="date_create_election_start_election">Votação começa em:</label>
-          <input type="date" class="form-control" id="date_create_election_start_election" required />
-            <div class="invalid-feedback">
-            Por favor, forneça a data de início da eleição.
-            </div>
-        </div>
-        <div class="form-group col-md-6">
-          <label for="date_create_election_end_election">Votação termina em:</label>
-          <input type="date" class="form-control" id="date_create_election_end_election" required />
-            <div class="invalid-feedback">
-            Por favor, forneça a data de termino da eleição.
-            </div>
-        </div>
-    </div>
-    <button class="btn btn-primary" id="button_create_election_next" type="submit">Avançar</button>
+   <div class="d-flex justify-content-center">
+    <button class="btn btn-primary" id="button_add_apur" type="submit">Adicionar</button>
+</div>
 </form>
 
 

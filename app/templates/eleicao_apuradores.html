@@ -41,7 +41,7 @@
             <div style="padding-right: 0;padding-left: 0px;margin-top: 32px;margin-right: 32px;margin-left: 32px;">
                 <div class="row">
                     <div class="col-auto">
-                        <h2>Rastreamento de cédulas e eleitores</h2>
+                        <h2>Apuradores</h2>
                     </div>
                     <div class="col"><a class="d-lg-flex" id="link_election_add_voters_back" href="#">Voltar</a></div>
                 </div>
@@ -50,21 +50,26 @@
                 </div>
                 <div class="row">
                     <div class="col-auto">
-                        <p>Sua eleição está Pública, qualquer pessoa com acesso ao link da eleição poderá votar</p>
+                        <p style="margin-top: 32px;">Assim como um uma eleição tradicional, no Helios o papel do apurador é de analisar as cédulas e contabilizar o resultado.<br><br>Por padrão o sistema Helios é o único apurador de toda eleição criada. Contudo, é possível que se
+                            retire essa responsabilidade do Helios e cadastre apuradores humanos.<br><br>Nessa tela é possível indicar uma ou mais pessoas como apuradores. Cada uma das pessoas indicadas como apurador receberá um e-mail para que criem
+                            seu par de chaves criptográficas e que carreguem sua chave pública para esta eleição.<br><br>Assim que adicionar um apurador, lembre-se de clicar no botão “Enviar e-mail”. O apurador receberá um e-mail alertando que ele deve
+                            carregar sua chave para a referida eleição.<br><br>A eleição só poderá ser iniciada, após todos os apuradores carregarem suas chaves criptográficas.<br><br><strong>ATENÇÃO</strong>: Na fase de apuração dos votos só será possível
+                            fazer a apuração dos votos depois que todos os apuradores carregarem suas chaves criptográficas. Se um apurador perder sua chave, então não haverá possibilidade de fazer a apuração e todos os votos dos eleitores serão perdidos,
+                            sem a possibilidade de recuperação.</p>
                     </div>
                 </div>
-                <div class="border rounded-circle" style="background: #a4a4a4;height: 3px;opacity: 0.33;margin-bottom: 10px;margin-top: 32px;"></div>
-                <h6>Se quiser mudar para eleição privada, clique no botão 'Eleição Privada'</h6><form>
+                <div class="border rounded-circle" style="background: #a4a4a4;height: 3px;opacity: 0.33;margin-bottom: 10px;margin-top: 32px;"></div><form>
     <div class="form-row" >
+        
             <div class="form-group col-md-2">
-                <button class="btn btn-primary" id="button_election_private" type="button">Eleição Privada
-                </button> 
-            </div>
-        <div class="form-group col-md-2">
-            <fieldset disabled>
-                <button class="btn btn-primary" id="button_election_public" type="button">Eleição Pública
+
+                <button class="btn btn-primary" id="button_election_private" type="button">Adicionar apurador
                 </button>
-            </fieldset> 
+
+            </div>
+           
+        <div class="form-group col-md-6">
+           <a id="link_election_add_helios_apu" class="stretched-link">Adicionar o Helios como apurador da eleição</a>
         </div>    
     </div>
 </form>
@@ -72,29 +77,26 @@
                 <div class="border rounded-circle" style="background: #a4a4a4;height: 3px;opacity: 0.33;margin-bottom: -80px;margin-top: 0px;"></div>
             </div>
             <!-- Start: Table With Search --><div class="col-md-12 search-table-col">
-    <div class="form-group pull-right col-lg-4">
-        <input type="text" class="search form-control" placeholder="Pesquisar eleitor" />
-    </div>
     <span class="counter pull-right"></span>
     <div class="table-responsive table-bordered table table-hover table-bordered results">
         <table class="table table-bordered table-hover">
             <thead class="bill-header cs">
                 <tr>
-                    <th id="trs-hd" class="col-lg-1">Nome</th>
-                    <th id="trs-hd" class="col-lg-2">Pseudônimo</th>
+                    <th id="trs-hd" class="col-lg-1">Apurador</th>
+                    <th id="trs-hd" class="col-lg-2"> Código de identificação de chave pública</th>
                     <th id="trs-hd" class="col-lg-3">E-mail</th>
-                    <th id="trs-hd" class="col-lg-2">Rastreador de Cédula</th>
+                    <th id="trs-hd" class="col-lg-2">Opções</th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="warning no-result">
-                    <td colspan="12"><i class="fa fa-warning"></i>  No Result !!!</td>
+                    <td colspan="12"><i class="fa fa-warning"></i>  Sem Resultado !!!</td>
                 </tr>
                 <tr>
-                    <td>user_name</td>
-                    <td>V1</td>
-                    <td>user_name@ufac.br</td>
-                    <td>tracker_number</td>
+                    <td>#1 apurador</td>
+                    <td>id</td>
+                    <td>email</td>
+                    <td><button class="btn btn-success" style="margin-left: 5px;" type="submit"><i class="fa fa-envelope-o" style="font-size: 15px;"></i></button><button class="btn btn-danger" style="margin-left: 5px;" type="submit"><i class="fa fa-trash" style="font-size: 15px;"></i></button></td>
                 </tr>
             </tbody>
         </table>

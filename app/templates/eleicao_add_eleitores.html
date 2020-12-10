@@ -27,7 +27,7 @@
                             <!-- End: button_nav_bar_help -->
                         </li>
                         <li class="nav-item">
-                            <!-- Start: button_nav_bar_logout --><a class="btn btn-light Logout" role="button" id="button_nav_bar_logout" href="#" style="background: #e32e2e;border-color: rgba(255,255,255,0);border-left-style: none;color: rgb(255,255,255);width: 80px;">Sair</a>
+                            <!-- Start: button_nav_bar_logout --><a class="btn btn-light Logout" role="button" id="button_nav_bar_logout" href="#" style="background: #e32e2e;border-color: rgba(255,255,255,0);border-left-style: none;color: rgb(255,255,255);width: 80px;">Sair<img src="/assets/img/exit-to-app-button.svg" width="16" style="margin-left: 6px;margin-right: -7px;filter: brightness(100%) invert(100%);"></a>
                             <!-- End: button_nav_bar_logout -->
                         </li>
                     </ul>
@@ -53,16 +53,14 @@
                         <p>Sua eleição está privada, apenas pessoas adicionadas aqui podem votar<br>Adicione um arquivo CSV com Login, Endereço de E-mail, Nome Completo.</p>
                     </div>
                 </div>
-                <div class="row no-gutters"><div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="file_input_election_add_voters_csv">Escolher Arquivo</span>
-  </div>
-  <div class="custom-file">
-    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="file_input_election_add_voters_csv">
-    <label class="custom-file-label" for="inputGroupFile01"></label>
-  </div>
-</div></div>
-                <div class="border rounded-circle" style="background: #a4a4a4;height: 3px;opacity: 0.33;margin-bottom: 10px;margin-top: 32px;"></div><form>
+                <div class="row no-gutters"><div  class="mb-3">
+ <label for="formFile" class="form-label">Selecione o arquivo CSV</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+
+ </div>
+                <div class="border rounded-circle" style="background: #a4a4a4;height: 3px;opacity: 0.33;margin-bottom: 10px;margin-top: 32px;"></div>
+                <h6 style="margin-bottom: 16px;">Se quiser mudar para eleição pública, clique no botão 'Eleição Pública'</h6><form>
     <div class="form-row" >
         
             <div class="form-group col-md-2">
@@ -90,6 +88,7 @@
         <table class="table table-bordered table-hover">
             <thead class="bill-header cs">
                 <tr>
+                    <th id="trs-hd" class="col-lg-1">Login</th>
                     <th id="trs-hd" class="col-lg-1">Nome</th>
                     <th id="trs-hd" class="col-lg-2">Pseudônimo</th>
                     <th id="trs-hd" class="col-lg-3">E-mail</th>
@@ -102,6 +101,7 @@
                     <td colspan="12"><i class="fa fa-warning"></i>  No Result !!!</td>
                 </tr>
                 <tr>
+                    <td>user_login</td>
                     <td>user_name</td>
                     <td>V1</td>
                     <td>user_name@ufac.br</td>

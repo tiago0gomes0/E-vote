@@ -41,7 +41,7 @@
             <div style="padding-right: 0;padding-left: 0px;margin-top: 32px;margin-right: 32px;margin-left: 32px;">
                 <div class="row">
                     <div class="col-auto">
-                        <h2>Rastreamento de cédulas e eleitores</h2>
+                        <h2>Congelar cédula</h2>
                     </div>
                     <div class="col"><a class="d-lg-flex" id="link_election_add_voters_back" href="#">Voltar</a></div>
                 </div>
@@ -50,57 +50,30 @@
                 </div>
                 <div class="row">
                     <div class="col-auto">
-                        <p>Sua eleição está Pública, qualquer pessoa com acesso ao link da eleição poderá votar</p>
+                        <p style="margin-bottom: 0px;">Assim que a cédula for congelada, nenhuma alteração poderá ser feita. O que inclui: Questões, apuradores e outros detalhes da eleição.</p>
                     </div>
                 </div>
-                <div class="border rounded-circle" style="background: #a4a4a4;height: 3px;opacity: 0.33;margin-bottom: 10px;margin-top: 32px;"></div>
-                <h6>Se quiser mudar para eleição privada, clique no botão 'Eleição Privada'</h6><form>
+                <div class="border rounded-circle" style="background: #a4a4a4;height: 3px;opacity: 0.33;margin-bottom: 10px;margin-top: 64px;"></div>
+                <h6 style="margin-bottom: 32px;">Você tem certeza que deseja congelar a cédula?</h6><form>
     <div class="form-row" >
-            <div class="form-group col-md-2">
-                <button class="btn btn-primary" id="button_election_private" type="button">Eleição Privada
-                </button> 
-            </div>
+        
+            
+           
         <div class="form-group col-md-2">
-            <fieldset disabled>
-                <button class="btn btn-primary" id="button_election_public" type="button">Eleição Pública
+            <button class="btn btn-primary" id="button_election_public" type="button" style="background-color:red;border-color:red;" >Cancelar
+            </button>
+        </div> 
+        
+        <div class="form-group col-md-2">
+            
+                <button class="btn btn-primary" id="button_election_private" type="submit">Congelar cédula
                 </button>
-            </fieldset> 
-        </div>    
+            </div>
     </div>
 </form>
 
                 <div class="border rounded-circle" style="background: #a4a4a4;height: 3px;opacity: 0.33;margin-bottom: -80px;margin-top: 0px;"></div>
             </div>
-            <!-- Start: Table With Search --><div class="col-md-12 search-table-col">
-    <div class="form-group pull-right col-lg-4">
-        <input type="text" class="search form-control" placeholder="Pesquisar eleitor" />
-    </div>
-    <span class="counter pull-right"></span>
-    <div class="table-responsive table-bordered table table-hover table-bordered results">
-        <table class="table table-bordered table-hover">
-            <thead class="bill-header cs">
-                <tr>
-                    <th id="trs-hd" class="col-lg-1">Nome</th>
-                    <th id="trs-hd" class="col-lg-2">Pseudônimo</th>
-                    <th id="trs-hd" class="col-lg-3">E-mail</th>
-                    <th id="trs-hd" class="col-lg-2">Rastreador de Cédula</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="warning no-result">
-                    <td colspan="12"><i class="fa fa-warning"></i>  No Result !!!</td>
-                </tr>
-                <tr>
-                    <td>user_name</td>
-                    <td>V1</td>
-                    <td>user_name@ufac.br</td>
-                    <td>tracker_number</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-            <!-- End: Table With Search -->
         </div>
     </div>
     <!-- End: Background -->
